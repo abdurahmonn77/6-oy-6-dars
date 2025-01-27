@@ -7,7 +7,8 @@ import Button from '../components/Button'
 
 const Navbar = () => {
   return (
-    <div className='w-[22%]  h-[100vh] pt-[113px] flex flex-col items-center border-r-[2px] border-slate-400'>
+    <div className='w-[22%]  h-[100vh] pt-[30px] flex flex-col items-center border-r-[2px] border-slate-400'>
+      <img src="src/assets/images/logo.png" alt="Logo Image"  className='mb-[50px]' width={"40px"} height={"33px"}/>
         <div className='flex flex-col gap-[30px] mb-[30px]'> 
           {navbarList.map(item => {
             return(
@@ -17,7 +18,7 @@ const Navbar = () => {
               className={({ isActive }) => `flex gap-[20px] ${isActive ? 'active' : ''}`}
             >
               {item.icon}
-              <span className='font-semibold text-[18px]'>{item.title}</span>
+              <span className='font-semibold text-[18px] text-[#4a4a4a]'>{item.title}</span>
             </NavLink>
             
             )
